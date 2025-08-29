@@ -2,7 +2,7 @@
 name = "project-name-here" 
 version = "0.1.0" 
 description = "Short description here"
-authors = [{name = "Author name", email = "Email address"}] 
+authors = [{name = "Author name", email = "email.address@example.com"}] 
 requires-python = ">=3.12" 
 dependencies = ["pandas", "pyyaml", "climb-onyx-client"] 
 
