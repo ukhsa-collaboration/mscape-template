@@ -10,7 +10,7 @@ dependencies = ["pandas", "pyyaml", "climb-onyx-client"]
 version = {attr = "project_name_here.__version__"} # Add underscore separated repo name here
 
 [project.optional-dependencies] # Dependencies for developers only - add more if required
-dev = ["ruff>=0.4.10,<0.5", "pytest"] 
+dev = ["ruff>=0.4.10,<0.5", "pytest", "pre-commit"] 
 
 [build-system] # Leave this section
 requires = ["setuptools"]
