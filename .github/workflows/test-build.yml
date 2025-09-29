@@ -4,8 +4,6 @@
 name: mscape_test_build_workflow
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
