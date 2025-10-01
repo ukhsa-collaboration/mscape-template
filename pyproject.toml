@@ -17,7 +17,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project.scripts] # Update with main repo script here
-qc_sample = "project_name_here.main_script:main"
+qc_sample = "mscape_template.mscape_script:main"
 
 [tool.ruff.lint] # Lint rules to follow - add or delete if required
 select = [
