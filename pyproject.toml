@@ -1,5 +1,5 @@
 [project] # Update all fields in this section
-name = "project-name-here"
+name = "mscape_template"  # Change this to your package - it must match module name in src
 dynamic = ["version"]  # Change the version in __init__.py in the package directory.
 description = "Short description here"
 authors = [{name = "Author name", email = "email.address@example.com"}]
@@ -7,7 +7,7 @@ requires-python = ">=3.12"
 dependencies = ["pandas", "pyyaml", "climb-onyx-client"]
 
 [tool.setuptools.dynamic]
-version = {attr = "project_name_here.__version__"} # Add underscore separated repo name here
+version = {attr = "mscape_template.__version__"} # Add packange name here to get version
 
 [project.optional-dependencies] # Dependencies for developers only - add more if required
 dev = ["ruff", "pytest", "pre-commit"]
@@ -42,7 +42,7 @@ select = [
 ignore = ["E501"] # Lint rules to ignore - add or remove as required
 
 [tool.ruff]
-line-length = 100
+line-length = 120
 
 [tool.ruff.format]
 quote-style = "double"
