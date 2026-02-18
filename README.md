@@ -29,7 +29,7 @@ remote and install the predefined pre-commit hook.
     cloned repo or from the file you downloaded. Click 'open' in the file browser window to upload it.
     f. Scroll down and click the green 'Create' button.
 
-    g. when clicking back into the 'rulesets' area from the banner on the right, you should now see
+    g. When clicking back into the 'rulesets' area from the banner on the right, you should now see
     `protect-main` with 4 rules, targetting 1 branch (which should be main).
 
 It's a good idea to click through the rules implemented to understand what is happening.
