@@ -20,7 +20,7 @@ remote and install the predefined pre-commit hook.
 
     b. Go to settings in the GitHub repo in your browser. The Settings tab is under the repo name and search bar.
 
-    c. On the banner on the right, you should see 'Rules'. Clickon the drop down, and click 'Rulesets'.
+    c. On the banner on the right, you should see 'Rules'. Click on the drop down, and click 'Rulesets'.
 
     d. Click on the green 'New Ruleset' button in the top right, and select 'Import a ruleset'.
 
