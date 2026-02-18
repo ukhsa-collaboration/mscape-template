@@ -3,7 +3,7 @@
   "name": "protect-main",
   "target": "branch",
   "source_type": "Repository",
-  "source": "ukhsa-collaboration/gpha-mscape-clinical-profiles",
+  "source": "ukhsa-collaboration/mscape-template",
   "enforcement": "active",
   "conditions": {
     "ref_name": {
