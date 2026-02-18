@@ -15,24 +15,26 @@ remote and install the predefined pre-commit hook.
 
 1.) Set up branch protection:
 
-    a. You should have either git cloned this repo locally, but if not, you will need the file
+a. You should have either git cloned this repo locally, but if not, you will need the file
+
     `recommended-branch-protection.json` from the template repo.
 
-    b. Go to settings in the GitHub repo in your browser. The Settings tab is under the repo name and search bar.
+b. Go to settings in the GitHub repo in your browser. The Settings tab is under the repo name and search bar.
 
-    c. On the banner on the right, you should see 'Rules'. Click on the drop down, and click 'Rulesets'.
+c. On the banner on the right, you should see 'Rules'. Click on the drop down, and click 'Rulesets'.
 
-    d. Click on the green 'New Ruleset' button in the top right, and select 'Import a ruleset'.
+d. Click on the green 'New Ruleset' button in the top right, and select 'Import a ruleset'.
 
-    e. A file browser window will open, where you can select the `recommended-branch-protection.json` from your locally
+e. A file browser window will open, where you can select the `recommended-branch-protection.json` from your locally 
+cloned repo or from the file you downloaded. Click 'open' in the file browser window to upload it.
 
-    cloned repo or from the file you downloaded. Click 'open' in the file browser window to upload it.
-    f. Scroll down and click the green 'Create' button.
+f. Scroll down and click the green 'Create' button.
 
-    g. When clicking back into the 'rulesets' area from the banner on the right, you should now see
-    `protect-main` with 4 rules, targetting 1 branch (which should be main).
+g. When clicking back into the 'rulesets' area from the banner on the right, you should now see `protect-main` with 4
+rules, targetting 1 branch (which should be main).
 
 It's a good idea to click through the rules implemented to understand what is happening.
+
 Essentially, when applied to the `main` branch:
 - Restrict deletions - can't delete `main` (only those with bypass can)
 - Require a pull request before merging - Require all commits be made to a non-target branch and submitted via a pull
@@ -43,23 +45,26 @@ previous pull request review approvals.
 - Require approval of the most recent reviewable push - most recent reviewable push must be approved by someone other
 than the person who pushed it.
 - Require status checks to pass - must pass tests and linting as laid out in the `.github/workflows/test-build.yml`.
-- Require branches to be up to date before merging - pull requests targeting `main` must be tested with the latest code.
+- Require branches to be up to date before merging - pull requests targeting `main` must be tested with the latest
+code.
 - Block for pushes - prevent users with push access from force pushing to `main`.
 
 2.) The pre-commit hook. This will run ruff, some Python linting and a search for potential climb-IDs* every time you
 commit locally.
 
-    a. First [install pre-commit](https://pre-commit.com/#install):
-        pip install pre-commit
+a. First [install pre-commit](https://pre-commit.com/#install):
+    
+    pip install pre-commit
 
-    b. Install the pre-commit hook into your .git/hooks directory using the pre-defined config in
-    .pre-commit-config.yaml:
-        pre-commit install
+b. Install the pre-commit hook into your .git/hooks directory using the pre-defined config in .pre-commit-config.yaml:
+        
+    pre-commit install
 
-    c. (optional) Run pre-commit against all files, to see if the current files pass the hook:
-        pre-commit run --all-files
+c. (optional) Run pre-commit against all files, to see if the current files pass the hook:
 
-    Now, whenever you run git commit the pre-commit hook should run automatically.
+    pre-commit run --all-files
+
+Now, whenever you run `git commit`, the pre-commit hook should run automatically.
 
 _\* Note on the climb-id search - this will match any occurrence of C- followed by 5 characters of A-F or 0-9. This
 __may__ match fasta sequences, such as 'AAC-CCAC...'. In this case, you may need to commit this separately and remove
@@ -77,8 +82,7 @@ As a minimum, mSCAPE repositories *MUST* include the following:
 - pyproject.toml file
 - .pre-commit-hooks.yaml
 
-This repo follows the above structure and contains examples of the files
-referenced above.
+This repo follows the above structure and contains examples of the file referenced above.
 
 ### Commit practices
 Commits **MUST** be:
@@ -98,17 +102,22 @@ UKHSA Engineering Standards suggest we **should** follow the
     hotfix/ — urgent fixes to production
 
 ### Branch protection
-Branch protection should be inplace, preventing pushing to default branch (usually main), requiring reviewed pull requests etc.
+Branch protection should be inplace, preventing pushing to default branch (usually main), requiring reviewed pull 
+requests etc.
 
 [Read the UKHSA Engineering Standards guidelines for more information.](https://ukhsa-collaboration.github.io/standards-org/development-standards/appendix/branch-protection-rules/)
 
 ### Pull Requests and merge process
 When you have a feature or fix ready, you can submit a merge request.
-The merge request should be populated using the merge-request template. This include a checklist, and can be [found in the repo](.github/pull_request_template.md).
+The merge request should be populated using the merge-request template. This include a checklist, and can be 
+[found in the repo](.github/pull_request_template.md).
 
-Essentially, read through this, choose the correct checklist for your needs - either 'writing a new component' or 'updating an existing component', delete the parts you do not need, tick the checkboxes as you make the checks, then submit for review.
+Essentially, read through this, choose the correct checklist for your needs - either 'writing a new component' 
+or 'updating an existing component', delete the parts you do not need, tick the checkboxes as you make the checks,
+then submit for review.
 
-You should then contact a reviewer, give the link to pull request and ideally meet to discuss what changes you have made and what you are looking for in this code review.
+You should then contact a reviewer, give the link to pull request and ideally meet to discuss what changes you 
+have made and what you are looking for in this code review.
 
 The reviewer should then go ahead and carry out the review as requested, and must verify the following:
 
