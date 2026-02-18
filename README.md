@@ -52,7 +52,7 @@ commit locally.
     a. First [install pre-commit](https://pre-commit.com/#install):
         pip install pre-commit
 
-    b. install the pre-commit hook into your .git/hooks directory using the pre-defined config in
+    b. Install the pre-commit hook into your .git/hooks directory using the pre-defined config in
     .pre-commit-config.yaml:
         pre-commit install
 
