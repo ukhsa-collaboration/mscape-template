@@ -56,13 +56,13 @@ commit locally.
     .pre-commit-config.yaml:
         pre-commit install
 
-    c. (optional) run pre-commit against all files, to see if the current files pass the hook:
+    c. (optional) Run pre-commit against all files, to see if the current files pass the hook:
         pre-commit run --all-files
 
-    Now, whenever you run git commit the pre-commit hook should now run automatically.
+    Now, whenever you run git commit the pre-commit hook should run automatically.
 
-_\* Note on the climb-id search - this will match any occurence of C- followed by 5 characters of A-F or 0-9. This
-__may__ match fasta sequences, such as 'AAC-CCAC...'. In this case, you may need to commit this seperately and remove
+_\* Note on the climb-id search - this will match any occurrence of C- followed by 5 characters of A-F or 0-9. This
+__may__ match fasta sequences, such as 'AAC-CCAC...'. In this case, you may need to commit this separately and remove
 the pre-commit check for this by doing `SKIP=climb-id-checker git commit -m "add fasta sequences (skipped id check)."`_
 
 ## Repo Requirements
