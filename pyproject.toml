@@ -7,7 +7,7 @@ requires-python = ">=3.12"
 dependencies = ["pandas", "pyyaml", "climb-onyx-client"]
 
 [tool.setuptools.dynamic]
-version = {attr = "mscape_template.__version__"} # Add packange name here to get version
+version = {attr = "mscape_template.__version__"} # Add package name here to get version
 
 [project.optional-dependencies] # Dependencies for developers only - add more if required
 dev = ["ruff", "pytest", "pre-commit"]
