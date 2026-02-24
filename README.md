@@ -1,7 +1,8 @@
 # mscape-template
 
-This repository is a template for creating new repositories containing code that will run on mSCAPE. It serves as a
-guide for code layout and files will need amending to fit the repo purpose.
+This repository is a template for creating new repositories containing code that 
+will run on mSCAPE. It serves as a guide for code layout and files will need 
+amending to fit the repo purpose.
 
 The guidance documentation contains further information on required repository
 structure, development cycles, and making pull requests. Please read
