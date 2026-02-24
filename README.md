@@ -6,7 +6,7 @@ amending to fit the repo purpose.
 
 There is guidance documentation including SOPs that contain further information on required repository
 structure, development cycles, and making pull requests. Please read
-this guidance document before using the template.
+this guidance documentation before using the template.
 
 Below the dashed line is a README template to be edited.
 
