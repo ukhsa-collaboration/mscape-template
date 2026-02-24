@@ -21,24 +21,30 @@ Add installation instructions here. Ideally include commands to make
 the process as easy as possible for users.
 
 Clone repo and create environment:
+
 `git clone git@github.com:ukhsa-collaboration/project-name.git`
 
 `conda env create -n project-name `
 
 `conda activate project-name`
 
-Installation for users:
+Installation for users: 
+
 `cd project-name`
+
 `pip install .`
 
-Installation for developers (installs code in editable mode):
+Installation for developers (installs code in editable mode): 
+
 `cd project-name`
+
 `pip install --editable '.[dev]'`
 
 ## Usage
 
 Include command line arguments (e.g. the output displayed when using -h)
 for reference. Example commands can also be helpful.
+
 ```
 project-name --input <path> --output <path>
 ```
