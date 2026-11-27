@@ -24,8 +24,9 @@ repo. Follow the instructions given.
 The .gitignore file uses a template with many common files that should not be committed, such as build files and cache.
 Common build files, caches and IDE directories are ignored already.
 
-The TEMPLATE_CHANGELOG shows the changes to this template respository, but the CHANGELOG.md is a template to
-be used in new repositories.
+The TEMPLATE_CHANGELOG shows the changes to this template respository, and can be removed from your repository.
+The CHANGELOG.md is a template to be used in new repositories. Remove the headers not necessary for your versions
+in the CHANGELOG.md as needed.
 [Read more about how to write a good changelog in the docs](https://keepachangelog.com/en/1.1.0/).
 
 ### Use a different Python version
