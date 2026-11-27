@@ -3,10 +3,10 @@ How to use this pull request template:
 1. Choose EITHER:
    'Writing a new component' if your code has not yet been reviewed and is the first PR to main,
    OR
-   'Updating an existing component' if the PR is to make an update to an existing component, this will be "Updating an existing component".
+   'Updating an existing component' if the PR is to make an update to an existing component.
    Delete the section you do not need.
 2. Complete all actions in the relevant checklist and tick off as they are completed by putting an "x" inside the square brackets (or ticking the box after opening the PR).
-3. Add any tasks that were not completed/relevant to this PR
+3. Add an explanation for any tasks that have not been completed to explain why they have been omitted. For example, if only documentation was updated, then you would not need to add or update unit tests.
 4. Update the list of tasks for the reviewer, deleting ones that are not needed for this PR.
 5. Delete any lines starting with >> to keep the PR neat.
 6. Assign the PR to a reviewer (this can also be done once the PR is created).

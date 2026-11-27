@@ -13,7 +13,7 @@ __Below the dashed line is a README template to be edited. Remove everything abo
 ## How to use the template:
 The template is set up for Python codebases. It is set to use Python >=3.14. It has the layout required for
 installable python packages with the SRC layout. It also includes a pre-commit hook config that should be
-set up before commiting to the repo. It has some preset GitHub interactions, such as the recommended branch
+set up before committing to the repo. It has some preset GitHub interactions, such as the recommended branch
 protection json and github action workflows;
     - the 'build' action runs the install, linting and pytest when opening a PR to main.
     - The 'docker' action builds the docker container and pushes it to GHCR, and runs when a release is published.
