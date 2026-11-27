@@ -8,7 +8,7 @@ There is guidance documentation including SOPs that contain further information 
 structure, development cycles, and making pull requests. Please read
 this guidance documentation before using the template.
 
-__Below the dashed line is a README template to be edited. Remove everything above this line.__
+There is a README template below the double lines.
 
 ## How to use the template:
 The template is set up for Python codebases. It is set to use Python >=3.14. It has the layout required for
@@ -32,6 +32,9 @@ be used in new repositories.
 The python version is set in the pyproject.toml, dockerbuild and test-build.yaml. To change the python
 version for your code base, change it in these files.
 
+
+
+__Below these double lines is a README template to be edited. Remove the lines and everything above them in your readme.__
 
 ---------------------
 ---------------------
