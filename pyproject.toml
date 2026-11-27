@@ -3,9 +3,9 @@ name = "mscape_template"  # Change this to your package - it must match module n
 dynamic = ["version"]  # Change the version in __init__.py in the package directory.
 description = "Short description here"
 authors = [{name = "Author name", email = "email.address@example.com"}]
-requires-python = ">=3.12"
+requires-python = ">=3.14"
 # Pin versions of possibly unstable dependencies or packages (especially internal)
-dependencies = ["pandas", "pyyaml", "climb-onyx-client"]  
+dependencies = ["pandas", "pyyaml", "climb-onyx-client"]
 
 [tool.setuptools.dynamic]
 version = {attr = "mscape_template.__version__"} # Add package name here to get version

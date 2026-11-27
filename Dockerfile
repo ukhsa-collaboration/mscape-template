@@ -1,7 +1,7 @@
-FROM python:3.12
+FROM python:3.14
 
 ADD . /app
 WORKDIR /app
 RUN pip install .
 
-CMD ["qc_sample"]
+CMD ["YOUR TOOL"]
